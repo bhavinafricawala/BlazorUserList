@@ -1,4 +1,4 @@
-﻿@page "/user/delete/{userId:int}"
+﻿@page "/delete/{userId:int}"
 @using UserList.Shared.Models
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
@@ -46,10 +46,10 @@
     protected async Task RemoveUser(int userID)
     {
         await Http.DeleteAsync("api/User/" + userID);
-        NavigationManager.NavigateTo("/fetchuserdetails");
+        NavigationManager.NavigateTo("/");
     }
     void Cancel()
     {
-        NavigationManager.NavigateTo("/fetchuserdetails");
+        NavigationManager.NavigateTo("/");
     }
 }

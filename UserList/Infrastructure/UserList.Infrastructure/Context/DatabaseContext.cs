@@ -20,10 +20,12 @@ namespace UserList.Infrastructure.Context
         public virtual DbSet<User> Users { get; set; } = null!;
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            OnModelCreatingPartial(modelBuilder);
+            modelBuilder.Entity<User>().ToTable("Users");
             modelBuilder.Entity<User>(entity =>
             {
-                entity.ToTable("userdetails");
-                entity.Property(e => e.Id).HasColumnName("Userid");
+                entity.ToTable("User");
+                entity.Property(e => e.Id).HasColumnName("Id");
                 entity.Property(e => e.FirstName)
                     .HasMaxLength(100)
                     .IsUnicode(false);
@@ -40,8 +42,9 @@ namespace UserList.Infrastructure.Context
                     .HasMaxLength(3)
                     .IsUnicode(false);
             });
-            OnModelCreatingPartial(modelBuilder);
+            
         }
+        
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

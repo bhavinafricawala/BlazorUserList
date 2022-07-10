@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using UserList.Infrastructure.Repositories;
 using UserList.Shared.Models;
+using MediatR;
+using UserList.Server.Applications.Queries;
+using UserList.Server.Applications.Commands;
 
 namespace UserList.Server.Controllers
 {
@@ -9,48 +12,59 @@ namespace UserList.Server.Controllers
     public class UserController : ControllerBase
     {
         private readonly IUserRepository _userRepository;
-        public UserController(IUserRepository userRepository)
+        private IMediator _mediator;
+        public UserController(IUserRepository userRepository, IMediator mediator)
         {
-            this._userRepository = userRepository;
+            _userRepository = userRepository;
+            _mediator = mediator;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var users = await _userRepository.GetUserDetails();
-            return Ok(users.ToList());
+            var query = new GetUserDetailsQuery();
+            var results = await _mediator.Send(query);
+
+            if (results == null)
+                return NotFound();
+
+            return Ok(results);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            var user =  await _userRepository.GetUserData(id);
+            var query = new GetUserDataQuery(id);
+            var result = await _mediator.Send(query);
 
-            if (user == null)
+            if (result == null)
                 return NotFound();
 
-            return Ok(user);
+            return Ok(result);
         }
 
         [HttpPost]
         public async Task<IActionResult> Post(User user)
         {
-            await _userRepository.UpdateUserDetails(user);
-            return Ok(user);
+            var command = new AddUserCommand(user);
+            var response = await _mediator.Send(command);
+            return Ok(response);
         }
 
         [HttpPut]
         public async Task<IActionResult> Put(User user)
         {
-            await _userRepository.UpdateUserDetails(user);
-            return Ok(user);
+            var command = new UpdateUserDetailsCommand(user);
+            var response = await _mediator.Send(command);
+            return Ok(response);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _userRepository.DeleteUser(id);
-            return Ok(true);
+            var command = new DeleteUserCommand(id);
+            var response = await _mediator.Send(command);
+            return Ok(response);
         }
     }
 }

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WksXCMJVyt/Swaaixv77umViLZ83KV75RC8cpp+FlQZ0DPhJxPmGYAkK02s9cGGAw3RTtrafhsC4YatOFcraew==",
+  "dgSpecHash": "5O4BCcIA989hQ7r3/Cvcs0wBxuiYvC0zwUXuHi2SyBmnI/sANtEOLMifmJUsm0vIm0XfMkLMEHJHIhJZs6xdJA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\bhavi\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\bhavi\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\bhavi\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\bhavi\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.6\\microsoft.aspnetcore.authorization.6.0.6.nupkg.sha512",
     "C:\\Users\\bhavi\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.6\\microsoft.aspnetcore.components.6.0.6.nupkg.sha512",
     "C:\\Users\\bhavi\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.6\\microsoft.aspnetcore.components.analyzers.6.0.6.nupkg.sha512",
