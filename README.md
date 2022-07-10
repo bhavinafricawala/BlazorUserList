@@ -25,7 +25,7 @@ CREATE TABLE [dbo].[User](
 )
 GO
 ```
-3. Insert records using the following script to newly created `User` table 
+3. Seed data using the following script to newly created `User` table 
 ```sql
 USE UserData;
 GO
