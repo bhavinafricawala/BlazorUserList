@@ -1,1 +1,106 @@
+# **************************************************
+# Universal
+#
+# The exclusions listed below are common to all of the projects.  Any project-specific
+# rules should be placed in that project's own .gitignore file.
+# --------------------------------------------------
+
+# Temp directory used by scripts
+_temp/
+
+# The output directory when building each project (MSBuild or Visual Studio).
+[Bb]in/
+[Oo]bj/
+[Tt]est[Rr]esults/
+[Bb]uild[Ll]og/
+
+# nuget restore
+.nuget/
+packages/
+project.lock.json
+*.nupkg
+*.snupkg
+
+# database projects
+*.dbmdl
+*.jfm
+
+node_modules/
+
+# **************************************************
+# Private user-specific storage
+#
+# These are files that can be created during the normal use of various tools and IDEs.
+# These are environment-specific (per user/machine) and not meant to be in source control.
+# (in some cases, they could even cause problems)
+# --------------------------------------------------
+
+# Visual Studio
 .vs/
+*.sln.docstates
+*.suo
+*.user
+*.[Cc]ache
+*.binlog
+
+# launchSettings.json contains settings to use when launching an application within Visual Studio.
+# Careful consideration should be used before allowing this file to be commited to the repo, as it may include settings that are
+# specific to an individual developer's machine. If possible, persistent settings should be stored elsewhere.
+# This is also a security concern:  We have had many instances where users have accidentally included secrets in this file.
+launchSettings.json
+
+# Visual Studio profiler
+*.psess
+*.sap
+*.vsp
+*.vspx
+
+# Visual Studio Code
+.vscode/
+
+# MonoDevelop/Xamarin Studio
+*.pidb
+*.userprefs
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# VS/MSBUILD Publish Profiles
+*.pubxml
+*.publishsettings
+
+# SQL Server files (hopefully no one would try this)
+*.mdf
+*.ldf
+*.ndf
+
+# Potential security-risks (cryptographic keys)
+*.pfx
+*.snk
+
+# Legacy Visual Stuido source-control related files
+$tf/
+*.scc
+*.vspscc
+*.vssscc
+
+# **************************************************
+# OS-specific files
+#
+# Really annoying when they creep into the repo...
+#
+# Users SHOULD have their global settings already, but including here "just in case."
+# --------------------------------------------------
+
+# Windows Explorer
+[Dd]esktop.ini
+# Windows thumbnail cache
+[Tt]humbs.db
+
+# Mac desktop service store files
+.DS_Store/
