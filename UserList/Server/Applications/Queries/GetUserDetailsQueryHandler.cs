@@ -15,7 +15,15 @@ namespace UserList.Server.Applications.Queries
 
         public async Task<IEnumerable<User>> Handle(GetUserDetailsQuery request, CancellationToken cancellationToken)
         {
-            return await _userRepository.GetUserDetails();            
+            try
+            {
+                return await _userRepository.GetUserDetails();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }            
         }
     }
 }
