@@ -18,22 +18,26 @@ namespace UserList.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public void AddUser(User user)
+        public async Task<bool> AddUser(User user)
         {
+            var transaction = await _dbContext.Database.BeginTransactionAsync();
             try
             {
                 _dbContext.Users.Add(user);
                 _dbContext.SaveChanges();
+                transaction.Commit();
             }
             catch (Exception)
             {
 
                 throw;
             }
+            return true;
         }
 
-        public void DeleteUser(int id)
+        public async Task<bool> DeleteUser(int id)
         {
+            var transaction = await _dbContext.Database.BeginTransactionAsync();
             try
             {
                 User? user = _dbContext.Users.Find(id);
@@ -41,6 +45,7 @@ namespace UserList.Infrastructure.Repositories
                 {
                     _dbContext.Users.Remove(user);
                     _dbContext.SaveChanges();
+                    transaction.Commit();
                 }
                 else
                 {
@@ -52,34 +57,31 @@ namespace UserList.Infrastructure.Repositories
 
                 throw;
             }
+            return true;
         }
 
-        public User GetUserData(int id)
+        public async Task<User> GetUserData(int id)
         {
             try
             {
-                User? user = _dbContext.Users.Find(id);
+               var user = await _dbContext.Users.Where(u=>u.Id == id).FirstOrDefaultAsync();
                 if (user != null)
-                {
                     return user;
-                }
                 else
-                {
                     throw new ArgumentNullException();
-                }
+
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
 
-        public List<User> GetUserDetails()
+        public async Task<IEnumerable<User>> GetUserDetails()
         {
             try
             {
-                return _dbContext.Users.ToList();
+                return await _dbContext.Users.ToListAsync();
             }
             catch (Exception)
             {
@@ -88,18 +90,20 @@ namespace UserList.Infrastructure.Repositories
             }
         }
 
-        public void UpdateUserDetails(User user)
+        public async Task<bool> UpdateUserDetails(User user)
         {
+            var transaction = await _dbContext.Database.BeginTransactionAsync();
             try
             {
                 _dbContext.Entry(user).State = EntityState.Modified;
                 _dbContext.SaveChanges();
+                transaction.Commit();
             }
             catch (Exception)
             {
-
                 throw;
             }
+            return true;
         }
     }
 }

@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\My\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj": {}
+    "D:\\Projects\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj": {}
   },
   "projects": {
-    "C:\\My\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj": {
+    "D:\\Projects\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj",
+        "projectUniqueName": "D:\\Projects\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj",
         "projectName": "UserList.Client",
-        "projectPath": "C:\\My\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj",
-        "packagesPath": "C:\\Users\\bafricawala\\.nuget\\packages\\",
-        "outputPath": "C:\\My\\BlazorUserList\\UserList\\Client\\obj\\",
+        "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj",
+        "packagesPath": "C:\\Users\\bhavi\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\BlazorUserList\\UserList\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bafricawala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bhavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -35,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj": {
-                "projectPath": "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj"
+              "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj": {
+                "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj"
               }
             }
           }
@@ -91,25 +89,23 @@
         }
       }
     },
-    "C:\\My\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj": {
+    "D:\\Projects\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Projects\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj",
         "projectName": "UserList.Infrastructure",
-        "projectPath": "C:\\My\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\bafricawala\\.nuget\\packages\\",
-        "outputPath": "C:\\My\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\obj\\",
+        "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\bhavi\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bafricawala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bhavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -122,8 +118,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj": {
-                "projectPath": "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj"
+              "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj": {
+                "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj"
               }
             }
           }
@@ -156,25 +152,23 @@
         }
       }
     },
-    "C:\\My\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj": {
+    "D:\\Projects\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj",
+        "projectUniqueName": "D:\\Projects\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj",
         "projectName": "UserList.Server",
-        "projectPath": "C:\\My\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj",
-        "packagesPath": "C:\\Users\\bafricawala\\.nuget\\packages\\",
-        "outputPath": "C:\\My\\BlazorUserList\\UserList\\Server\\obj\\",
+        "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Server\\UserList.Server.csproj",
+        "packagesPath": "C:\\Users\\bhavi\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\BlazorUserList\\UserList\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bafricawala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bhavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -187,14 +181,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\My\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj": {
-                "projectPath": "C:\\My\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj"
+              "D:\\Projects\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj": {
+                "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Client\\UserList.Client.csproj"
               },
-              "C:\\My\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj": {
-                "projectPath": "C:\\My\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj"
+              "D:\\Projects\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj": {
+                "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Infrastructure\\UserList.Infrastructure\\UserList.Infrastructure.csproj"
               },
-              "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj": {
-                "projectPath": "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj"
+              "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj": {
+                "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj"
               }
             }
           }
@@ -236,25 +230,23 @@
         }
       }
     },
-    "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj": {
+    "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj",
+        "projectUniqueName": "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj",
         "projectName": "UserList.Shared",
-        "projectPath": "C:\\My\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj",
-        "packagesPath": "C:\\Users\\bafricawala\\.nuget\\packages\\",
-        "outputPath": "C:\\My\\BlazorUserList\\UserList\\Shared\\obj\\",
+        "projectPath": "D:\\Projects\\BlazorUserList\\UserList\\Shared\\UserList.Shared.csproj",
+        "packagesPath": "C:\\Users\\bhavi\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\BlazorUserList\\UserList\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\bafricawala\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bhavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

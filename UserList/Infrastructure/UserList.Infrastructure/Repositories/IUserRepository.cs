@@ -9,10 +9,10 @@ namespace UserList.Infrastructure.Repositories
 {
     public interface IUserRepository
     {
-        public List<User> GetUserDetails();
-        public void AddUser(User user);
-        public void UpdateUserDetails(User user);
-        public User GetUserData(int id);
-        public void DeleteUser(int id);
+        Task<IEnumerable<User>> GetUserDetails();
+        Task<bool> AddUser(User user);
+        Task<bool> UpdateUserDetails(User user);
+        Task<User> GetUserData(int id);
+        Task<bool> DeleteUser(int id);
     }
 }
