@@ -12,6 +12,6 @@ namespace UserList.Shared.Models
         public string LastName { get; set; } = null!;
         public string Address { get; set; } = null!;
         public string Phone { get; set; } = null!;
-        public int Age { get; set; }
+        public string Age { get; set; }
     }
 }
