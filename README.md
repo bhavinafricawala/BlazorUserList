@@ -1,5 +1,10 @@
 # Blazor CRUD Web App
 
+## Prerequisites
+- [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/sql-server-express-localdb?view=sql-server-ver16)
+- [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+
+
 ## Database
 1. Create a SQL Server database named `UserData` in either `(localdb)/MSSQLLocalDB` or any SQL Server in your network.
 2. Create a new table using the folowing script
