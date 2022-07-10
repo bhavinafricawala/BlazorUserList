@@ -14,7 +14,15 @@ namespace UserList.Server.Applications.Commands
 
         public async Task<bool> Handle(DeleteUserCommand request, CancellationToken cancellationToken)
         {
-            return await _userRepository.DeleteUser(request.UserId); ;
+            try
+            {
+                return await _userRepository.DeleteUser(request.UserId); ;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }            
         }
       
     }

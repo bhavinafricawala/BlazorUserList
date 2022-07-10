@@ -15,8 +15,16 @@ namespace UserList.Server.Applications.Commands
 
         public async Task<User> Handle(UpdateUserDetailsCommand request, CancellationToken cancellationToken)
         {
-            await _userRepository.UpdateUserDetails(request.User);
-            return request.User;
+            try
+            {
+                await _userRepository.UpdateUserDetails(request.User);
+                return request.User;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }            
         }
     }
 }
