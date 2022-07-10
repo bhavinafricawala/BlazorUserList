@@ -43,7 +43,7 @@ GO
 2. Go to `\BlazorUserList\UserList\Server\appsettings.json` and update the connection string `DefaultConnection` to point to the newly created Database.
 
 ## References
-Below are the nuget packages that the project uses
+Below are the nuget packages that are referenced in the project.
 - [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer) 
 - [Microsoft.EntityFrameworkCore.Tools](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools) 
 - [MediatR](https://www.nuget.org/packages/MediatR)
