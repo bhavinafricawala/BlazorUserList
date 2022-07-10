@@ -6,7 +6,7 @@
 
 
 ## Database
-1. Create a SQL Server database named `UserData` in either `(localdb)/MSSQLLocalDB` or any SQL Server in your network.
+1. Create a SQL Server database named `UserData` in either `(localdb)/MSSQLLocalDB` or any Microsoft SQL Server in your network.
 2. Create a new table using the folowing script
 ```sql
 USE UserData;
