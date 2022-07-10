@@ -14,7 +14,7 @@ GO
 CREATE TABLE [dbo].[User](
     [Id] [int] IDENTITY(1,1) NOT NULL,
     [FirstName] [nvarchar](100) NULL,
-	[LastName] [nvarchar](100) NULL,
+    [LastName] [nvarchar](100) NULL,
     [Address] [nvarchar](500) NULL,
     [Phone] [nvarchar](50) NULL,
     [Age] [nvarchar](50) NULL,
